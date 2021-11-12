@@ -24,6 +24,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - make
+    - perl  # [build_platform != target_platform]
   host:
     - perl
     - perl-mime-charset
